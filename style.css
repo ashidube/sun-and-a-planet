@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(26, 8, 43);
+}
+
+.path {
+  width: 250px;
+  height: 250px;
+  border: 0px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 84px;
+  top: 84px;
+  z-index: 3;
+}
+
+.sun {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(red, black);
+  border-radius: 50%;
+  position: absolute;
+  top: 196px;
+  left: 196px;
+}
+
+.stars {
+  background-color: white;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+.planet {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, orange, grey, black);
+  border-radius: 50%;
+  position: absolute;
+  top: 196px;
+  left: 196px;
+  z-index: 2;
+  animation: movement 7s linear infinite;
+}
+
+@keyframes movement {
+  from {
+    transform: rotate(0deg) translateX(125px);
+  }
+  to {
+    transform: rotate(360deg) translateX(125px);
+  }
+}
